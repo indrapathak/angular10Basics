@@ -1,0 +1,107 @@
+<app-header></app-header>
+<html>
+
+<body>
+
+
+
+<h2>Example of passing data from parent to child component</h2>
+<div *ngFor= "let value of usersArray">
+<app-child-comp [user] = "value"></app-child-comp>
+</div>
+
+<!-- 
+  <h1>This the first angular 10 Application </h1>
+<h3>Example of passing data from child to parent component</h3>
+<app-child-comp (parentFunction)="parentFunction($event)"></app-child-comp>
+
+
+<h2>Example for Adding Bootstrap in Angular</h2>
+<p>
+  <ngb-alert [dismissible]="false">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  </ngb-alert>
+</p>
+
+<h2>Example for Adding Angular UI</h2>
+<button mat-raised-button color="primary">Angular UI </button>
+<br><br>
+
+<h2> For testing the module and component handling of login component in users module </h2>
+<app-login ></app-login>
+
+
+<h2> For function call testing by making button </h2>
+
+<button (click) = getUserName()>Get the User Name</button>
+<br> <br>
+
+<h2> For Testing Various Types of Events </h2>
+<input type="text" #box (keyup.enter)="myEvent(box.value)" />
+<br> <br>
+
+<h2> For Testing Mouse over and Mouse Leave  event </h2>
+<h1
+(mouseover)="myEvent('MouseOver Event is Called')"
+style ="background-color: green;">
+Testing the Mouse Over </h1>
+
+
+<h1
+(mouseleave)="myEvent('Mouse Leave event is Called')"
+style ="background-color: red;">
+Testing the Mouse Leave event </h1>
+
+<br> <br>
+<h2> For getting the text box value </h2>
+<input type="text" #box (keyup)="getValue($event.target.value)" />
+<h2>{{currentVal}}</h2>
+
+<h1>Property Binding in Angular </h1>
+<input type="text" [value]= name />
+<br> <br>
+
+<h1>Testing the if else Condition   </h1>
+
+<h1 *ngIf="show else elseBlock">
+If Block
+</h1>
+<ng-template #elseBlock>
+<h1>Else Block</h1>
+</ng-template>
+
+<h1>For Loop In angular with Table</h1>
+
+<table border="1">
+<tr>
+<td>Name</td>
+<td>Age</td>
+</tr>
+<tr *ngFor= "let value of data">
+<td>{{value.name}}</td>
+<td>{{value.age}}</td>
+</tr>
+</table>
+
+<h1>Simple Form In Angular</h1>
+
+<h2>Example for Using Forms In Angular</h2>
+
+<form #simpleForm="ngForm" (ngSubmit)="getValues(simpleForm.value)">
+<input type="text"  ngModel name="username" placeholder="Enter the username">
+<br><br>
+<input type="text"  ngModel name="age" placeholder="Enter the age">
+<br><br>
+<input type="text"  ngModel name="email" placeholder="Enter the email">
+<br><br>
+<button>Get The User</button>
+</form>
+-->
+
+
+</body>
+</html>
+
+<app-footer></app-footer>
+
+
